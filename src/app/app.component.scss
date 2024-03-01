@@ -1,0 +1,28 @@
+.quote-card-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.quote-card {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.my-spacer {
+    flex: 1 1 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    background-color: #f5f5f5;
+}
+
+.footer-content p {
+    color: #666;
+    margin: 0;
+}
