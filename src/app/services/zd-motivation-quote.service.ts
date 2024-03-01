@@ -12,7 +12,7 @@ export class ZdMotivationQuoteService {
     }
 
     public getRandomQuote(): Observable<RandomQuote> {
-        return this.httpClient.get<RandomQuote[]>('https://zenquotes.io/api/random').pipe(
+        return this.httpClient.get<RandomQuote[]>('/api/random').pipe(
             map(quoteList => {
                 const quote: RandomQuote = {
                     q: quoteList[0].q, a: quoteList[0].a

@@ -17,7 +17,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/zd-motivation-quote",
+                        "outputPath": "docs",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": [
@@ -69,10 +69,12 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "browserTarget": "zd-motivation-quote:build:production"
+                            "browserTarget": "zd-motivation-quote:build:production",
+                            "proxyConfig": "proxy.conf.json"
                         },
                         "development": {
-                            "browserTarget": "zd-motivation-quote:build:development"
+                            "browserTarget": "zd-motivation-quote:build:development",
+                            "proxyConfig": "proxy.conf.json"
                         }
                     },
                     "defaultConfiguration": "development"
