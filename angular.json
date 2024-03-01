@@ -70,11 +70,11 @@
                     "configurations": {
                         "production": {
                             "browserTarget": "zd-motivation-quote:build:production",
-                            "proxyConfig": "proxy.conf.js"
+                            "proxyConfig": "proxy.conf.json"
                         },
                         "development": {
                             "browserTarget": "zd-motivation-quote:build:development",
-                            "proxyConfig": "proxy.conf.js"
+                            "proxyConfig": "proxy.conf.json"
                         }
                     },
                     "defaultConfiguration": "development"
