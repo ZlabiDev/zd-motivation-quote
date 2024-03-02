@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ZdMotivationQuoteService} from "./services/zd-motivation-quote.service";
-import {Observable, tap} from "rxjs";
+import {Observable} from "rxjs";
 import {RandomQuote} from "./models/random-quote";
 
 @Component({
@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.randomQuote$ = this.zdMotivationQuoteService.getRandomQuote().pipe(tap(console.log));
+        this.randomQuote$ = this.zdMotivationQuoteService.getRandomQuote();
     }
 
     openGithub() {
