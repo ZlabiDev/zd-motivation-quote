@@ -1,10 +1,7 @@
 <mat-toolbar color="primary">
     <span>Random Motivation Quote</span>
     <span class="my-spacer"></span>
-    <button matTooltip="Open ZlabiDev's GitHub" (click)="openGithub()" mat-icon-button
-            class="example-icon favorite-icon">
-        <mat-icon>person</mat-icon>
-    </button>
+    <span (click)="openGithub()" class="github-link">ZlabiDev's GitHub</span>
 </mat-toolbar>
 
 <ng-container *ngIf="(randomQuote$ | async) as randomQuote; else loadingSpinner">

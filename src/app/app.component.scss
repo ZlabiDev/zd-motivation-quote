@@ -31,3 +31,11 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+.github-link {
+    cursor: pointer;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
