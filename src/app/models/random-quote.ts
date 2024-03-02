@@ -1,4 +1,5 @@
 export interface RandomQuote {
-    q: string; // quote
-    a: string; // person who said the quote
+    content: string; // quote
+    author: string; // person who said the quote
+    tags: string[];
 }

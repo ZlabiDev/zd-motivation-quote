@@ -18,6 +18,7 @@
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
                         "outputPath": "docs",
+                        "baseHref": "/zd-motivation-quote/",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": [
@@ -63,18 +64,13 @@
                     "defaultConfiguration": "production"
                 },
                 "serve": {
-                    "options": {
-                        "proxyConfig": "proxy.conf.json"
-                    },
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "browserTarget": "zd-motivation-quote:build:production",
-                            "proxyConfig": "proxy.conf.json"
+                            "browserTarget": "zd-motivation-quote:build:production"
                         },
                         "development": {
-                            "browserTarget": "zd-motivation-quote:build:development",
-                            "proxyConfig": "proxy.conf.json"
+                            "browserTarget": "zd-motivation-quote:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
